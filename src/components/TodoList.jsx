@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BsTrash3 } from "react-icons/bs";
+import { FaTrash } from "react-icons/fa";
 
 const TodoList = ({todos,setTodos}) => {
 
@@ -24,10 +24,11 @@ const TodoList = ({todos,setTodos}) => {
                   key={id}
                 >
                   <li className="fs-3">{text}</li>
-                  <BsTrash3
-                    className="fs-3 text-danger"
-                    onClick={() => deleteTodo(id)}
-                  />
+
+                  <FaTrash  className="fs-3 text-danger"
+                    onClick={() => deleteTodo(id)} />
+
+                  
                 </div>
               ))
             ) : (
