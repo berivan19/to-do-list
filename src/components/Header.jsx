@@ -24,7 +24,7 @@ console.log(newTodo);
 
   return (
 
-    <div>My Todo List
+    <div >My Todo List
 
 <Form.Control
               className="form-control"
@@ -35,7 +35,7 @@ console.log(newTodo);
               style={{ height: "50px" }}
             />
 
-      <Button variant="danger" id="button-addon" onClick={addTodo}>
+      <Button className='btn btn-outline-success ' variant="" id="button-addon" onClick={addTodo}>
 Add Todo
 </Button>
 

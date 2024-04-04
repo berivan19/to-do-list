@@ -23,9 +23,9 @@ const TodoList = ({todos,setTodos}) => {
                   className="list d-flex justify-content-between align-items-center"
                   key={id}
                 >
-                  <li className="fs-3">{text}</li>
+                  <li className="fs-3 text-">{text}</li>
 
-                  <FaTrash  className="fs-3 text-danger"
+                  <FaTrash  className="fs-3 text-primary"
                     onClick={() => deleteTodo(id)} />
 
                   
