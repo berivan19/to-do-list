@@ -16,7 +16,6 @@ const[todos, setTodos] = useState(initialTodos)
 
   return (
     <div>
-      <div>Main</div>
       
       <Header todos={todos} setTodos={setTodos} />
 

@@ -15,7 +15,7 @@ const TodoList = ({todos,setTodos}) => {
 <div className=" container todo-list  mt-3">
       <div className="row justify-content-center">
         <div className="col-lg-8 col-md-10">
-          <h2 className="text-center fs-1 text-info ">Todos</h2>
+          <h2 className="text-center fs-1 text-success mb-5 ">Todos</h2>
           <ul>
             {todos?.length ? (
               todos.map(({ id, text }) => (
@@ -23,9 +23,9 @@ const TodoList = ({todos,setTodos}) => {
                 className="list d-flex justify-content-between align-items-center"
                   key={id}
                 >
-                  <li className="fs-3 text-info">{text}</li>
+                  <li className="fs-3 text-success ">{text}</li>
 
-                  <FaTrash  className="fs-3 text-primary"
+                  <FaTrash  className="fs-3 text-danger"
                     onClick={() => deleteTodo(id)} />
 
                   
