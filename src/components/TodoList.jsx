@@ -12,10 +12,10 @@ const TodoList = ({todos,setTodos}) => {
 
   return (
     
-<div className=" container todo-list  mt-3">
+<div style={{backgroundColor: "rgb(255, 97, 163)"}}>
       <div className="row justify-content-center">
-        <div className="col-lg-8 col-md-10">
-          <h2 className="text-center fs-1 text-success mb-5 ">Todos</h2>
+        <div className="col-lg-8 col-md-5">
+          <h2 className="text-center fs-1 text-dark mb-5 ">Todos</h2>
           <ul>
             {todos?.length ? (
               todos.map(({ id, text }) => (
@@ -23,16 +23,16 @@ const TodoList = ({todos,setTodos}) => {
                 className="list d-flex justify-content-between align-items-center"
                   key={id}
                 >
-                  <li className="fs-3 text-success ">{text}</li>
+                  <li className="fs-3 text-dark ">{text}</li>
 
-                  <FaTrash  className="fs-3 text-danger"
+                  <FaTrash  className="fs-3 text-dark"
                     onClick={() => deleteTodo(id)} />
 
                   
                 </div>
               ))
             ) : (
-              <p className="text-center mt-5 fs-3">No tasks yet!</p>
+              <p className="text-center text-dark mt-5 fs-3">No tasks yet!</p>
             )}
           </ul>
         </div>

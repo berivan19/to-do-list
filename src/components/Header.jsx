@@ -42,9 +42,9 @@ console.log(newTodo);
 
 //     </div>
 
-<div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "50vh", flexDirection: "column" }}>
+<div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "50vh", flexDirection: "column", backgroundColor: "rgb(255, 97, 163)" }}>
 
-  <h1 className=' mb-5 text-bg-success col-5'>My Todo List</h1>
+  <h1 className=' mb-5 text-dark col-5'>My Todo List</h1>
 
   <div style={{ display: "flex", justifyContent: "center", alignItems: "center",   }}>
     <Form.Control
