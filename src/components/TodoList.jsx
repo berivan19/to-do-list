@@ -13,7 +13,7 @@ const TodoList = ({todos,setTodos}) => {
   return (
     
 <div style={{backgroundColor: "rgb(255, 97, 163)"}}>
-      <div className="row justify-content-center">
+      <div style={{display: "flex", justifyContent: "center", paddingBottom: "250px" }}>
         <div className="col-lg-8 col-md-5">
           <h2 className="text-center fs-1 text-dark mb-5 ">Todos</h2>
           <ul>
@@ -25,7 +25,7 @@ const TodoList = ({todos,setTodos}) => {
                 >
                   <li className="fs-3 text-dark ">{text}</li>
 
-                  <FaTrash  className="fs-3 text-dark"
+                  <FaTrash  className="fs-3 text-dark "
                     onClick={() => deleteTodo(id)} />
 
                   
